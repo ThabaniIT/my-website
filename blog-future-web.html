@@ -647,6 +647,126 @@
       color: var(--gray);
       font-size: 0.9rem;
     }
+
+    /* ===============================
+   BLOG PAGE (FULL ARTICLE)
+================================ */
+
+.blog-page {
+  padding: 7rem 0 5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 148, 136, 0.05),
+    transparent
+  );
+}
+
+.blog-page .container {
+  max-width: 850px;
+}
+
+/* Article Card */
+.blog-page article {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Title */
+.blog-page h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Meta info */
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 2.5rem;
+}
+
+.blog-meta i {
+  color: var(--primary);
+}
+
+/* Cover Image */
+.blog-cover {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Article content */
+.blog-page p {
+  font-size: 1.05rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+
+.blog-page h3 {
+  font-size: 1.5rem;
+  margin: 3rem 0 1rem;
+  position: relative;
+}
+
+.blog-page h3::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 70%;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+/* Quote style (optional future use) */
+.blog-quote {
+  margin: 3rem 0;
+  padding: 1.5rem 2rem;
+  background-color: rgba(13, 148, 136, 0.08);
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+  font-style: italic;
+  color: var(--dark);
+}
+
+/* Back button */
+.blog-back {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 6rem 0 4rem;
+  }
+
+  .blog-page article {
+    padding: 2rem;
+  }
+
+  .blog-page h1 {
+    font-size: 2rem;
+  }
+
+  .blog-cover {
+    height: 260px;
+  }
+}
+
     
     /* Contact Section */
     .contact-container {
@@ -991,28 +1111,28 @@
       <a href="#hero" class="navbar-brand">Thabani <span>Dlamini</span></a>
       <ul class="navbar-menu">
         <li class="navbar-item">
-          <a href="#hero" class="navbar-link active">Home</a>
+          <a href="index.html#hero" class="navbar-link active">Home</a>
         </li>
         <li class="navbar-item">
-          <a href="#about" class="navbar-link">About</a>
+          <a href="index.html#about" class="navbar-link">About</a>
         </li>
         <li class="navbar-item">
-          <a href="#skills" class="navbar-link">Skills</a>
+          <a href="index.html#skills" class="navbar-link">Skills</a>
         </li>
         <li class="navbar-item">
-          <a href="#experience" class="navbar-link">Experience</a>
+          <a href="index.html#experience" class="navbar-link">Experience</a>
         </li>
         <li class="navbar-item">
-          <a href="#education" class="navbar-link">Education</a>
+          <a href="index.html#education" class="navbar-link">Education</a>
         </li>
         <li class="navbar-item">
-          <a href="#portfolio" class="navbar-link">Portfolio</a>
+          <a href="index.html#portfolio" class="navbar-link">Portfolio</a>
         </li>
         <li class="navbar-item">
-          <a href="#blog" class="navbar-link">Blog</a>
+          <a href="index.html#blog" class="navbar-link">Blog</a>
         </li>
         <li class="navbar-item">
-          <a href="#contact" class="navbar-link">Contact</a>
+          <a href="index.html#contact" class="navbar-link">Contact</a>
         </li>
         <li class="navbar-item">
           <a href="https://drive.google.com/file/d/1ONGc5E1qw5PaLCSIvrccoRyTaXyBz2rE/view?usp=drive_link" class="btn btn-outline" id="download-cv">
@@ -1030,28 +1150,28 @@
   <div class="mobile-menu">
     <ul class="mobile-menu-list">
       <li class="mobile-menu-item">
-        <a href="#hero" class="mobile-menu-link">Home</a>
+        <a href="index.html#hero" class="mobile-menu-link">Home</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#about" class="mobile-menu-link">About</a>
+        <a href="index.html#about" class="mobile-menu-link">About</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#skills" class="mobile-menu-link">Skills</a>
+        <a href="index.html#skills" class="mobile-menu-link">Skills</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#experience" class="mobile-menu-link">Experience</a>
+        <a href="index.html#experience" class="mobile-menu-link">Experience</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#education" class="mobile-menu-link">Education</a>
+        <a href="index.html#education" class="mobile-menu-link">Education</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+        <a href="index.html#portfolio" class="mobile-menu-link">Portfolio</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#blog" class="mobile-menu-link">Blog</a>
+        <a href="index.html#blog" class="mobile-menu-link">Blog</a>
       </li>
       <li class="mobile-menu-item">
-        <a href="#contact" class="mobile-menu-link">Contact</a>
+        <a href="index.html#contact" class="mobile-menu-link">Contact</a>
       </li>
       <li class="mobile-menu-item">
         <a href="javascript:void(0)" class="btn btn-outline" id="mobile-download-cv">
@@ -1061,325 +1181,64 @@
     </ul>
   </div>
   
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <div class="hero-content" data-aos="fade-up">
-        <div class="hero-text">
-          <h1 class="hero-name">Thabani <span class="text-primary">Dlamini</span></h1>
-          <p class="hero-tagline">Aspiring IT Professional | Customer Service Enthusiast | Adaptable and Driven</p>
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn">View My Work</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-          </div>
-        </div>
-        <div class="hero-img" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://image2url.com/images/1758742863932-fe4beef6-d87a-4c87-8908-1f72a7bd8afc.png" alt="Thabani Dlamini">
-        </div>
+  <section class="blog-page">
+  <div class="container">
+    <article>
+      <h1>The Future of Web Development</h1>
+
+      <div class="blog-meta">
+        <span><i class="fas fa-calendar"></i> January 15, 2025</span>
+        <span><i class="fas fa-user"></i> Thabani Dlamini</span>
+        <span><i class="fas fa-clock"></i> 5 min read</span>
       </div>
-    </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">About Me</h2>
-      <div class="about-content">
-        <div class="about-img" data-aos="fade-right">
-          <img src="https://image2url.com/images/1758472512644-71013ec3-3105-4940-a2fc-a3d7b0547b9f.png" alt="About Thabani">
-        </div>
-        <div class="about-text" data-aos="fade-left">
-          <h3 class="about-title">I'm Thabani Dlamini, an Aspiring IT Professional</h3>
-          <p class="about-description">I am an Information Technology graduate from Limkokwing University, with a strong passion for technology and its ability to solve real-world problems.</p>
-          <p class="about-description">Throughout my academic journey, I developed strong adaptability and interpersonal skills, which I consider essential in today’s fast-evolving tech landscape. I have a particular interest in leveraging technology to enhance customer experiences across industries such as IT, retail, and fashion.</p>
-          <p class="about-description">With a solid foundation in programming languages and core IT concepts, I am eager to apply my knowledge in practical environments while continuing to grow as a professional. I value continuous learning and staying current with emerging technologies to deliver effective and innovative solutions.</p>
-          <div class="hero-buttons">
-            <a href="#skills" class="btn">My Skills</a>
-            <a href="#contact" class="btn btn-outline">Hire Me</a>
-          </div>
-        </div>
+
+      <img
+        src="https://image2url.com/images/1758797140718-dea35283-370b-47d6-b966-792cfddb525f.jpg"
+        alt="Future of Web Development"
+        class="blog-cover"
+      />
+
+      <p>
+        Web development is evolving faster than ever, driven by advancements in artificial intelligence,
+        user experience design, and powerful web technologies. What once required desktop software can now
+        be achieved entirely through the browser.
+      </p>
+
+      <h3>AI-Powered Development</h3>
+      <p>
+        Artificial Intelligence is transforming how websites are built and maintained. From AI-assisted
+        code generation to intelligent chatbots and personalized content, developers are now able to create
+        smarter, more adaptive web applications.
+      </p>
+
+      <h3>Immersive User Experiences</h3>
+      <p>
+        Technologies like WebGL, WebXR, and advanced CSS animations are pushing websites beyond static pages.
+        Modern websites now offer interactive and immersive experiences that feel more like applications
+        than traditional sites.
+      </p>
+
+      <h3>Performance and Accessibility</h3>
+      <p>
+        Speed and accessibility are no longer optional. Developers are focusing on optimized loading,
+        mobile-first design, and inclusive accessibility standards to ensure everyone can access the web
+        seamlessly.
+      </p>
+
+      <p>
+        As the web continues to grow, developers who stay adaptable and continuously learn will be best
+        positioned to thrive in this exciting digital future.
+      </p>
+
+      <div class="blog-back">
+        <a href="index.html#blog" class="btn btn-outline">
+          ← Back to Blog
+        </a>
       </div>
-    </div>
-  </section>
-  
-  <!-- Skills Section -->
-  <section id="skills" class="section" style="background-color: rgba(13, 148, 136, 0.05);">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-      <div class="skills-container">
-        <div class="skill-card" data-aos="fade-up">
-          <h3 class="skill-title">Technical Skills</h3>
-          <ul class="skill-list">
-            <li class="skill-item">Java</li>
-            <li class="skill-item">C++</li>
-            <li class="skill-item">JavaScript</li>
-            <li class="skill-item">PHP</li>
-            <li class="skill-item">HTML</li>
-            <li class="skill-item">CSS</li>
-            <li class="skill-item">WordPress</li>
-            <li class="skill-item">Networking</li>
-            <li class="skill-item">Cybersecurity</li>
-          </ul>
-        </div>
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="skill-title">Transferable Skills</h3>
-          <ul class="skill-list">
-            <li class="skill-item">Problem Solving</li>
-            <li class="skill-item">Customer Service</li>
-            <li class="skill-item">Teamwork</li>
-            <li class="skill-item">Time Management</li>
-            <li class="skill-item">Adaptability</li>
-            <li class="skill-item">Communication</li>
-            <li class="skill-item">Critical Thinking</li>
-            <li class="skill-item">Attention to Detail</li>
-            <li class="skill-item">Organization</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
-      <div class="experience-container">
-        <div class="experience-card" data-aos="fade-up">
-          <h3 class="experience-title">Polling Officer</h3>
-          <p class="experience-company">Elections and Boundaries Commission</p>
-          <p class="experience-period">June 2023 - August 2023</p>
-          <p class="experience-description">Worked as part of a team to facilitate the electoral process, ensuring smooth operations and adherence to protocols.</p>
-          <ul class="experience-responsibilities">
-            <li class="experience-responsibility">Collaborated with team members to manage voting stations efficiently</li>
-            <li class="experience-responsibility">Provided excellent customer support to voters, addressing queries and concerns</li>
-            <li class="experience-responsibility">Solved problems quickly to maintain smooth operations throughout the voting process</li>
-            <li class="experience-responsibility">Handled sensitive data with strict confidentiality and accuracy</li>
-            <li class="experience-responsibility">Adapted to changing circumstances while maintaining composure in a high-pressure environment</li>
-          </ul>
-        </div>
-        <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="experience-title">IT Intern</h3>
-          <p class="experience-company">National Curriculum Centre</p>
-          <p class="experience-period">April 2025 - June 2025</p>
-          <p class="experience-description">Gained hands-on experience providing IT support and maintaining computer systems in a professional environment.</p>
-          <ul class="experience-responsibilities">
-            <li class="experience-responsibility">Assisted with installation, configuration, and troubleshooting of hardware & software</li>
-            <li class="experience-responsibility">Supported staff with technical issues, ensuring minimal downtime</li>
-            <li class="experience-responsibility">Helped maintain network connectivity, system updates, and data security</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Education Section -->
-  <section id="education" class="section" style="background-color: rgba(13, 148, 136, 0.05);">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Education</h2>
-      <div class="education-container">
-        <div class="education-card" data-aos="fade-up">
-          <h3 class="education-degree">Associate Degree in Information Technology</h3>
-          <p class="education-school">Limkokwing University of Creative Technology</p>
-          <p class="education-period">2023 - 2025</p>
-        </div>
-        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="education-degree">Secondary Education</h3>
-          <p class="education-school">Milestone International Academy</p>
-          <p class="education-period">2020 - 2021</p>
-        </div>
-        <div class="education-card" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="education-degree">Secondary Education</h3>
-          <p class="education-school">Manzini Nazarene High School</p>
-          <p class="education-period">2014 - 2019</p>
-        </div>
-        <div class="education-card" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="education-degree">Primary Education</h3>
-          <p class="education-school">St. Michael's Primary School</p>
-          <p class="education-period">2007 - 2013</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
-      <div class="portfolio-filter" data-aos="fade-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Development</button>
-        <button class="filter-btn" data-filter="app">App Development</button>
-        <button class="filter-btn" data-filter="design">Design</button>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item" data-aos="fade-up" data-category="web">
-          <div class="portfolio-img">
-            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="E-commerce Website">
-          </div>
-          <div class="portfolio-content">
-            <h3 class="portfolio-title">E-commerce Website</h3>
-            <p class="portfolio-category">Web Development</p>
-            <p class="portfolio-description">A fully functional e-commerce website with user authentication, product catalog, and payment integration.</p>
-            <div class="portfolio-links">
-              <a href="javascript:void(0)" class="portfolio-link">
-                <i class="fas fa-eye"></i> View Demo
-              </a>
-              <a href="javascript:void(0)" class="portfolio-link">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100" data-category="app">
-          <div class="portfolio-img">
-            <img src="https://cdn.pixabay.com/photo/2017/01/22/12/07/imac-1999636_960_720.png" alt="Task Manager App">
-          </div>
-          <div class="portfolio-content">
-            <h3 class="portfolio-title">Task Manager App</h3>
-            <p class="portfolio-category">App Development</p>
-            <p class="portfolio-description">A mobile application for managing daily tasks, with features like reminders, categories, and progress tracking.</p>
-            <div class="portfolio-links">
-              <a href="https://8krzb.magicloops.app/" class="portfolio-link">
-                <i class="fas fa-eye"></i> View Demo
-              </a>
-              <a href="javascript:void(0)" class="portfolio-link">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200" data-category="design">
-          <div class="portfolio-img">
-            <img src="https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg" alt="Brand Identity Design">
-          </div>
-          <div class="portfolio-content">
-            <h3 class="portfolio-title">Brand Identity Design</h3>
-            <p class="portfolio-category">Design</p>
-            <p class="portfolio-description">A comprehensive brand identity design including logo, color palette, typography, and brand guidelines.</p>
-            <div class="portfolio-links">
-              <a href="javascript:void(0)" class="portfolio-link">
-                <i class="fas fa-eye"></i> View Project
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Blog Section -->
-  <section id="blog" class="section" style="background-color: rgba(13, 148, 136, 0.05);">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Blog</h2>
-      <div class="blog-grid">
-        <div class="blog-item" data-aos="fade-up">
-          <div class="blog-img">
-            <img src="https://image2url.com/images/1758797140718-dea35283-370b-47d6-b966-792cfddb525f.jpg" alt="Blog Post 1">
-          </div>
-          <div class="blog-content">
-            <p class="blog-date">January 15, 2025</p>
-            <h3 class="blog-title">The Future of Web Development</h3>
-            <p class="blog-excerpt">Exploring the latest trends and technologies that are shaping the future of web development. From AI integration to immersive experiences...</p>
-            <a href="blog-future-web.html" class="btn btn-outline">Read More</a>
-          </div>
-        </div>
-        <div class="blog-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="blog-img">
-            <img src="https://image2url.com/images/1758796256031-fc505997-8900-44e2-8fd0-b25b07dc2df0.jpg" alt="Blog Post 2">
-          </div>
-          <div class="blog-content">
-            <p class="blog-date">February 22, 2025</p>
-            <h3 class="blog-title">Mastering WordPress Development</h3>
-            <p class="blog-excerpt">Tips and tricks for becoming a WordPress development expert. Learn about custom themes, plugins, and optimization techniques...</p>
-            <a href="blog-wordpress.html" class="btn btn-outline">Read More</a>
-          </div>
-        </div>
-        <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-img">
-            <img src="https://image2url.com/images/1758796841352-d05d616d-bd50-4292-b880-e12cfd439f07.jpg" alt="Blog Post 3">
-          </div>
-          <div class="blog-content">
-            <p class="blog-date">March 10, 2025</p>
-            <h3 class="blog-title">Balancing IT and Customer Service</h3>
-            <p class="blog-excerpt">How technical professionals can excel in customer-facing roles. Strategies for effective communication and problem-solving...</p>
-            <a href="blog-it-customer-service.html" class="btn btn-outline">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-      <div class="contact-container">
-        <div class="contact-form" data-aos="fade-right">
-          <div class="success-message" id="contact-success">
-            <p>Your message has been sent successfully. I will get back to you soon!</p>
-          </div>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" placeholder="Enter your message" required></textarea>
-            </div>
-            <button type="submit" class="btn" id="submit-btn">
-              <span class="spinner"></span>
-              Send Message
-            </button>
-          </form>
-        </div>
-        <div class="contact-info" data-aos="fade-left">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Email</h3>
-              <p>thabanidlamini022@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Phone</h3>
-              <p>(+268) 76225906 / 79548174</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Location</h3>
-              <p>Manzini, Eswatini</p>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/thabani-dlamini-50288b358" class="social-link" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/thabani022?igsh=MTBia21ybzVsaDBnOA==" class="social-link" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="javascript:void(0)" class="social-link" title="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </article>
+  </div>
+</section>
+
   
   <!-- Footer -->
   <footer class="footer">
